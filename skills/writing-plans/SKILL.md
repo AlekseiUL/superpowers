@@ -1,6 +1,10 @@
 ---
 name: writing-plans
+version: 1.0.0
 description: Use when you have a spec or requirements for a multi-step task, before touching code
+requires:
+  - superpowers:executing-plans
+  - superpowers:subagent-driven-development
 ---
 
 # Writing Plans

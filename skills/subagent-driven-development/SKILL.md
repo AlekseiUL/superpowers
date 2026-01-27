@@ -1,6 +1,13 @@
 ---
 name: subagent-driven-development
+version: 1.0.0
 description: Use when executing implementation plans with independent tasks in the current session
+requires:
+  - superpowers:writing-plans
+  - superpowers:finishing-a-development-branch
+optional:
+  - superpowers:test-driven-development
+  - superpowers:requesting-code-review
 ---
 
 # Subagent-Driven Development

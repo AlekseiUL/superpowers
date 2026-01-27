@@ -118,7 +118,7 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 - **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
 
 **Meta**
-- **writing-skills** - Create new skills following best practices (includes testing methodology)
+- **skill-maker** - Create new skills following best practices (includes testing methodology)
 - **using-superpowers** - Introduction to the skills system
 
 ## Philosophy
@@ -136,10 +136,10 @@ Skills live directly in this repository. To contribute:
 
 1. Fork the repository
 2. Create a branch for your skill
-3. Follow the `writing-skills` skill for creating and testing new skills
+3. Follow the `skill-maker` skill for creating and testing new skills
 4. Submit a PR
 
-See `skills/writing-skills/SKILL.md` for the complete guide.
+See `skills/skill-maker/SKILL.md` for the complete guide.
 
 ## Updating
 

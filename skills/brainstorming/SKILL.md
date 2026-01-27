@@ -1,6 +1,13 @@
 ---
 name: brainstorming
+version: 1.1.0
 description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+requires:
+  - superpowers:business-analyst
+optional:
+  - superpowers:using-git-worktrees
+  - superpowers:writing-plans
+  - marketing
 ---
 
 # Brainstorming Ideas Into Designs
@@ -8,6 +15,27 @@ description: "You MUST use this before any creative work - creating features, bu
 ## Overview
 
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+
+**IMPORTANT**: If the request is vague or unclear (e.g., "automate a business process" without specifics), you MUST first invoke `superpowers:business-analyst` to gather requirements before proceeding with brainstorming.
+
+**Decision Tree**:
+```
+User request received
+        │
+        ▼
+┌───────────────────┐
+│ Is request clear? │
+│ (who, what, why)  │
+└─────────┬─────────┘
+          │
+    ┌─────┴─────┐
+    │ NO        │ YES
+    ▼           ▼
+┌─────────┐  ┌─────────────┐
+│ Load BA │  │ Proceed to  │
+│ skill   │  │ brainstorm  │
+└─────────┘  └─────────────┘
+```
 
 Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design in small sections (200-300 words), checking after each section whether it looks right so far.
 

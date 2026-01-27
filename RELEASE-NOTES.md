@@ -44,7 +44,7 @@ Fixed a confusing pattern where Claude would invoke a skill via the Skill tool, 
 
 Added a note about replying to inline review comments in the original thread rather than as top-level PR comments.
 
-**Added automation-over-documentation guidance to writing-skills** (h/t @EthanJStark)
+**Added automation-over-documentation guidance to skill-maker** (h/t @EthanJStark)
 
 Added guidance that mechanical constraints should be automated, not documented—save skills for judgment calls.
 
@@ -108,7 +108,7 @@ Three new test frameworks for validating skill behavior:
 
 Rewrote key skills using DOT/GraphViz flowcharts as the authoritative process definition. Prose becomes supporting content.
 
-**The Description Trap** (documented in `writing-skills`): Discovered that skill descriptions override flowchart content when descriptions contain workflow summaries. Claude follows the short description instead of reading the detailed flowchart. Fix: descriptions must be trigger-only ("Use when X") with no process details.
+**The Description Trap** (documented in `skill-maker`): Discovered that skill descriptions override flowchart content when descriptions contain workflow summaries. Claude follows the short description instead of reading the detailed flowchart. Fix: descriptions must be trigger-only ("Use when X") with no process details.
 
 **Skill priority in using-superpowers**
 
@@ -122,7 +122,7 @@ Description changed to imperative: "You MUST use this before any creative work�
 
 **Skill consolidation** - Six standalone skills merged:
 - `root-cause-tracing`, `defense-in-depth`, `condition-based-waiting` → bundled in `systematic-debugging/`
-- `testing-skills-with-subagents` → bundled in `writing-skills/`
+- `testing-skills-with-subagents` → bundled in `skill-maker/`
 - `testing-anti-patterns` → bundled in `test-driven-development/`
 - `sharing-skills` removed (obsolete)
 
@@ -208,7 +208,7 @@ Description changed to imperative: "You MUST use this before any creative work�
 
 ### Bug Fixes
 
-- Clarified `writing-skills` guidance so it points to the correct agent-specific personal skill directories (`~/.claude/skills` for Claude Code, `~/.codex/skills` for Codex).
+- Clarified `skill-maker` guidance so it points to the correct agent-specific personal skill directories (`~/.claude/skills` for Claude Code, `~/.codex/skills` for Codex).
 
 ## v3.3.0 (2025-10-28)
 
@@ -309,7 +309,7 @@ These changes address observed agent behavior where they rationalize around skil
 - Updated format: `superpowers:test-driven-development` (previously just `test-driven-development`)
 - Affects all REQUIRED SUB-SKILL, RECOMMENDED SUB-SKILL, and REQUIRED BACKGROUND references
 - Aligns with how skills are invoked using the Skill tool
-- Files updated: brainstorming, executing-plans, subagent-driven-development, systematic-debugging, testing-skills-with-subagents, writing-plans, writing-skills
+- Files updated: brainstorming, executing-plans, subagent-driven-development, systematic-debugging, testing-skills-with-subagents, writing-plans, skill-maker
 
 ### Improvements
 
@@ -345,8 +345,8 @@ These changes address observed agent behavior where they rationalize around skil
 - Restructured Key Principles as scannable table
 
 **Anthropic best practices integration**
-- Added `skills/writing-skills/anthropic-best-practices.md` - Official Anthropic skill authoring guide
-- Referenced in writing-skills SKILL.md for comprehensive guidance
+- Added `skills/skill-maker/anthropic-best-practices.md` - Official Anthropic skill authoring guide
+- Referenced in skill-maker SKILL.md for comprehensive guidance
 - Provides patterns for progressive disclosure, workflows, and evaluation
 
 ### Improvements
@@ -378,7 +378,7 @@ These changes address observed agent behavior where they rationalize around skil
 
 ### Documentation
 
-**writing-skills improvements**
+**skill-maker improvements**
 - Updated cross-referencing guidance with explicit requirement markers
 - Added reference to Anthropic's official best practices
 - Improved examples showing proper skill reference format
@@ -485,7 +485,7 @@ If you have an existing installation:
 - Always includes /SKILL.md suffix in references
 - Clearer distinction between rigid rules and flexible patterns
 
-**writing-skills**
+**skill-maker**
 - Cross-referencing guidance moved from using-skills
 - Added token efficiency section (word count targets)
 - Improved CSO (Claude Search Optimization) guidance
@@ -619,7 +619,7 @@ The plugin handles everything automatically.
 
 - Skills repository is now at https://github.com/obra/superpowers-skills
 - Fork → Branch → PR workflow
-- See skills/meta/writing-skills/SKILL.md for TDD approach to documentation
+- See skills/meta/skill-maker/SKILL.md for TDD approach to documentation
 
 ## Known Issues
 
